@@ -11,8 +11,8 @@ logging.basicConfig(
     level=logging.INFO,
 )
 
-TELEGRAM_TOKEN = "7769768254:AAF7MUvtLiMKLXx2S-Mjs8o1akCnwOwuMUY"
-GROQCLOUD_API_KEY = "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"
+TELEGRAM_TOKEN = ""
+GROQCLOUD_API_KEY = ""
 
 chatbot = Groq(
     api_key=GROQCLOUD_API_KEY,
@@ -39,7 +39,7 @@ async def handle_menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
     elif text == "IT-технології":
         await update.message.reply_text("Список IT-технологій: Python, Java, ML, Linux.")
     elif text == "Контакти":
-        await update.message.reply_text("Телефон: +380664569429\nE-mail: dyakunchack.i@gmail.com")
+        await update.message.reply_text("Телефон: +380xxxxxxxxx\nE-mail: xxxxxx.x@gmail.com")
     elif text == "Prompt Groq":
         await update.message.reply_text("Введіть свій запит для GroqCloud:")
     else:
